@@ -1,0 +1,102 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(138, 108, 108), rgb(83, 54, 54));
+    font-size: 2rem;
+}
+
+main {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.start-newgame {
+    grid-column: 1 / 11;
+    grid-row: 1;
+    display: inline;
+    text-align: center;
+    align-items: center;
+}
+
+.player1-score {
+    grid-column: 1 / 6;
+    grid-row: 2 / 5;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.player2-score {
+    grid-column: 6 / 11;
+    grid-row: 2 / 5;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.player1-current {
+    grid-column: 3;
+    grid-row: 5 / 6;
+    text-align: center;
+    align-items: center;
+}
+
+.player2-current {
+    grid-column: 8;
+    grid-row: 5 / 6;
+    text-align: center;
+    align-items: center;
+}
+
+.roll-dice {
+    grid-column: 5 / 7;
+    grid-row: 5;
+    text-align: center;
+    align-items: center;
+}
+
+.hold-score {
+    grid-column: 5 / 7;
+    grid-row: 6;
+    text-align: center;
+    align-items: center;
+}
+
+.dice {
+    grid-column: 5 / 7;
+    grid-row: 3 / 5;
+    border: solid;
+    height: 80px;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.left-side {
+    grid-column: 1 / 6;
+    grid-row: 1 / 7;
+    background-color: rgb(240, 231, 231);
+}
+
+.right-side {
+    grid-column: 6 / 11;
+    grid-row: 1 / 7;
+    background-color: white;
+}
